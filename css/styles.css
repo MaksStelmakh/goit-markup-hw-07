@@ -72,16 +72,19 @@ body {
   border: 1px solid #ececec;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-.nav-link.current::after {
+.header__link.current::after {
   transform: scaleX(1);
 }
 
-.nav-link::after {
+.header__link::after {
   content: "";
   position: absolute;
   display: block;
@@ -94,16 +97,20 @@ body {
   transform: scaleX(0);
 }
 
-.nav-link:hover::after,
-.nav-link:focus::after {
+.header__link:hover::after,
+.header__link:focus::after {
   transform: scaleX(1);
 }
 
-.nav-item {
+.header__item {
   position: relative;
 }
 
-.first-logo {
+.navigation {
+  margin-left: 93px;
+}
+
+.header__first-logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -111,10 +118,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
-  margin-right: 93px;
 }
 
-.second-logo {
+.header__second-logo--black {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -124,12 +130,12 @@ body {
   text-decoration: none;
 }
 
-.header-list {
+.header__list {
   display: flex;
   align-items: center;
 }
 
-.nav-item:not(:last-child) {
+.header__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -137,11 +143,11 @@ body {
   margin-left: auto;
 }
 
-.commun-item:not(:last-child) {
+.header__commun-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-link {
+.header__link {
   display: block;
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -154,12 +160,12 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.header__link:hover,
+.header__link:focus {
   color: var(--accent-color);
 }
 
-.commun-link {
+.header__commun-link {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -169,8 +175,8 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.commun-link:hover,
-.commun-link:focus {
+.header__commun-link:hover,
+.header__commun-link:focus {
   color: var(--accent-color);
   fill: currentColor;
 }
@@ -183,9 +189,6 @@ body {
   background-color: #2f303a;
   max-width: 1600px;
   margin: 0 auto;
-}
-
-.main-container {
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(
@@ -199,7 +202,7 @@ body {
   height: 600px;
 }
 
-.main-text {
+.main__text {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -213,7 +216,7 @@ body {
   margin-right: auto;
 }
 
-.main-button {
+.main__button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -236,7 +239,7 @@ body {
 
 /*======Info===========*/
 
-.icons-info {
+.info__icons {
   display: flex;
   width: 270px;
   height: 120px;
@@ -247,16 +250,16 @@ body {
   justify-content: center;
 }
 
-.info-container {
+.info{
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.info-list {
+.info__list {
   display: flex;
 }
 
-.info-title {
+.info__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -265,7 +268,7 @@ body {
   margin-bottom: 10px;
 }
 
-.info-text {
+.info__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -274,7 +277,7 @@ body {
   min-width: 270px;
 }
 
-.info-item:not(:last-child) {
+.info__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -498,7 +501,7 @@ footer {
   text-decoration: none;
 }
 
-.second-logo-footer {
+.header__second-logo--white {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
