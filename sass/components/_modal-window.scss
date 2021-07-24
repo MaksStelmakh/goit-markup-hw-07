@@ -29,9 +29,9 @@
   width: 11px;
   height: 11px;
   fill: #000000;
-}
 
-.btn:hover,
-.btn:focus {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }

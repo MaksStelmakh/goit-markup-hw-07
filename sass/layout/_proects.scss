@@ -44,20 +44,20 @@
   box-sizing: border-box;
   margin-bottom: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.projects-title:hover .project-text,
-.projects-title:focus .project-text {
-  transform: translateY(0%);
-}
+  &:hover .project-text,
+  &:focus .project-text {
+    transform: translateY(0%);
+  }
 
-.projects-title:hover,
-.projects-title:focus {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .projects-img-div {
